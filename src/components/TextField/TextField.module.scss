@@ -1,0 +1,27 @@
+.inputText {
+    font-family: var(--ffNS-500);
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      outline: none;
+      border-color: #007bff; /* Change border color on focus */
+    }
+  
+    &.p-invalid {
+      border-color: #dc3545; /* Change border color for invalid state */
+    }
+  
+    &::placeholder {
+      color: #999; /* Placeholder color */
+    }
+  
+    &.disabled {
+      opacity: 0.5; /* Reduce opacity for disabled state */
+      cursor: not-allowed;
+    }
+  }
+  
